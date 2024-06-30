@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NRI Food Order Website</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="nrilogo.png"width="700"height="100">
+</head>
+<body>
+<header>
+<centre>
+    <h1>NRI Food court</h1>
+<img src="item.png"width="750">
+<h2>order-form</h2>
+</centre>
+</header>
+<main>
+    <form id="order-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+            
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <form id="addressForm">
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <input type="submit" value="Submit Address">
+        <centre>
+            <label for="food">Select Food:</label>
+            <select id="food" name="food">
+                <option value="DOSA">DOSA</option>
+                <option value="IDLY"> IDLY</option>
+                <option value="PURI">PURI</option>
+                <option value="BAJJI">BAJJI</option>
+                <option value="VADA">VADA</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <button type="submit">Place Order</button>
+    </form>
+</main>
+    <footer>
+        <p>&copy; 2024 Food Order Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
